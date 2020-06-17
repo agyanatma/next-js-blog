@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
-import Button from "../components/button";
-import styles from "./footer.module.scss";
+import Button from "./button";
+import Block from "./block";
+import styles from "./styles/footer.module.scss";
 
 const Footer = () => {
     const [email, setEmail] = useState("");
@@ -18,7 +19,7 @@ const Footer = () => {
 
     return (
         <footer>
-            <div className={styles.wrapper}>
+            <Block type="horizontal">
                 <div className={styles.content}>
                     <div className={styles.tagline}>
                         <h1>Newsletter</h1>
@@ -32,7 +33,7 @@ const Footer = () => {
                         </Button>
                     </form>
                 </div>
-            </div>
+            </Block>
         </footer>
     );
 };

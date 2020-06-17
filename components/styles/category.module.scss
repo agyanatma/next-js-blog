@@ -1,0 +1,12 @@
+$black: #1e1e1e;
+
+.category {
+    background-color: $black;
+    color: white;
+
+    p {
+        padding: 0.5em 20px;
+        font-weight: 600;
+        font-size: 0.7em;
+    }
+}

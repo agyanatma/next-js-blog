@@ -1,3 +1,5 @@
 module.exports = {
-    env: {},
+    env: {
+        url: "http://localhost:3000/",
+    },
 };

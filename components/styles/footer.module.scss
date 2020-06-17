@@ -1,15 +1,9 @@
 $black: #1e1e1e;
 $gray: #E5E5E5;
 
-.wrapper {
-    margin: 0 auto;
-    padding: 0.8em 1em;
-    max-width: 1200px;
-    background-color: $gray;
-    border-right: 1.5em solid $black;
-    height: 10em;
+.content {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 
     h1 {
         font-weight: 900;
@@ -35,13 +29,6 @@ $gray: #E5E5E5;
     input:focus {
         border-bottom: 4px solid $black;
     }
-
-}
-
-
-.content {
-    display: flex;
-    align-items: flex-end;
 }
 
 .tagline {
