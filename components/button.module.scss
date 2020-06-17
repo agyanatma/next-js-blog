@@ -1,0 +1,31 @@
+$black: #1e1e1e;
+
+.btn {
+    margin-left: 1.2em;
+    padding: 0.3em 0.7em;
+    color: $black;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1em;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn:first-of-type {
+    margin-left: 0em;
+}
+
+.btn:hover {
+    color: white;
+    background-color: $black;
+}
+
+.primary {
+    border-left: 2px solid $black;
+    border-bottom: 2px solid $black;
+}
+
+.secondary {
+    border-bottom: 2px solid $black;
+}

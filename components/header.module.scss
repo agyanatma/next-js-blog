@@ -1,0 +1,30 @@
+$black: #1e1e1e;
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 80px;
+}
+
+.content {
+    padding: 0.8em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.logo {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.stripe {
+    border-top: 3px solid $black;
+    border-bottom: 1px solid $black;
+    border-left: 0px;
+    border-right: 0px;
+    height: 7px;
+    margin: 0;
+}

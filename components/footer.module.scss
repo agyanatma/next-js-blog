@@ -1,0 +1,49 @@
+$black: #1e1e1e;
+$gray: #E5E5E5;
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0.8em 1em;
+    max-width: 1200px;
+    background-color: $gray;
+    border-right: 1.5em solid $black;
+    height: 10em;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        font-weight: 900;
+        font-size: 2.7em;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 0.5em;
+        font-weight: 700;
+    }
+
+    input {
+        font-size: 1em;
+        margin-right: 1em;
+        padding: 0.3em 0.7em;
+        width: 20em;
+        border: 0;
+        border-bottom: 2px solid $black;
+        border-left: 2px solid $black;
+    }
+
+    input:focus {
+        border-bottom: 4px solid $black;
+    }
+
+}
+
+
+.content {
+    display: flex;
+    align-items: flex-end;
+}
+
+.tagline {
+    margin-right: 2em;
+}
