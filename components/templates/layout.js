@@ -1,9 +1,9 @@
 import React from "react";
 import Head from "next/head";
 
-import styles from "./styles/layout.module.scss";
-import Header from "./header";
-import Footer from "./footer";
+import styles from "../styles/layout.module.scss";
+import Header from "../organisms/header";
+import Footer from "../organisms/footer";
 
 const Layout = (props) => {
     const url = process.env.url;
@@ -12,7 +12,7 @@ const Layout = (props) => {
     const image = "";
 
     return (
-        <div>
+        <>
             <Head>
                 <title>{title}</title>
                 <meta name="title" content={title} />
@@ -33,7 +33,7 @@ const Layout = (props) => {
             <Header />
             <main>{props.children}</main>
             <Footer />
-        </div>
+        </>
     );
 };
 

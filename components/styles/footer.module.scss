@@ -2,8 +2,11 @@ $black: #1e1e1e;
 $gray: #E5E5E5;
 
 .content {
-    display: flex;
-    align-items: flex-end;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 0 20px;
+    //align-items: flex-end;
 
     h1 {
         font-weight: 900;
@@ -20,17 +23,50 @@ $gray: #E5E5E5;
         font-size: 1em;
         margin-right: 1em;
         padding: 0.3em 0.7em;
-        width: 20em;
+        //width: 20em;
+        width: 15em;
         border: 0;
         border-bottom: 2px solid $black;
         border-left: 2px solid $black;
     }
 
+
     input:focus {
-        border-bottom: 4px solid $black;
+        outline: none;
     }
 }
 
 .tagline {
-    margin-right: 2em;
+    margin-bottom: 2em;
+}
+
+.bottom {
+    margin: 0 auto;
+    max-width: 1200px;
+    //background-color: $black;
+    padding: 0.5em;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .content {
+        grid-template-columns: 1fr 1fr;
+        align-items: flex-end;
+        padding: 0;
+
+        input {
+            width: 20em;
+
+        }
+    }
+
+    .tagline {
+        margin-bottom: 0;
+        margin-right: 2em;
+    }
+
+    .bottom {
+        text-align: right;
+    }
 }

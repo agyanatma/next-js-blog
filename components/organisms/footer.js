@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import Button from "./button";
-import Block from "./block";
-import styles from "./styles/footer.module.scss";
+import Button from "../atoms/button";
+import Block from "../molecules/block";
+import styles from "../styles/footer.module.scss";
 
 const Footer = () => {
     const [email, setEmail] = useState("");
@@ -27,13 +27,16 @@ const Footer = () => {
                     </div>
                     <form className={styles.form} onSubmit={() => alert("Submitted!")}>
                         <label>Email address</label>
-                        <input type="email" value={email} onChange={handleChange} />
-                        <Button onClicked={handleClicked} type="primary">
+                        <input type="email" name="email" value={email} onChange={handleChange} />
+                        <Button onClick={handleClicked} type="primary">
                             Send Email
                         </Button>
                     </form>
                 </div>
             </Block>
+            <div className={styles.bottom}>
+                <p>Copyright © 2020. Agyan Atma</p>
+            </div>
         </footer>
     );
 };
