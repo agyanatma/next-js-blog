@@ -9,6 +9,11 @@ $gray: #E5E5E5;
     border-right: 1.5em solid $black;
 }
 
+.margin {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 .vertical {
     display: flex;
     flex-direction: column;

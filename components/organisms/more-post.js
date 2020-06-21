@@ -2,19 +2,20 @@ import React from "react";
 import Link from "next/link";
 
 import Button from "../atoms/button";
-import DateMeta from "../atoms/date";
+import Meta from "../atoms/meta";
 import Cover from "../atoms/cover";
 import Title from "../atoms/title";
 import styles from "../styles/post.module.scss";
 
-const Hero = ({ title, date, cover, excerpt, slug }) => {
+const MorePosts = ({ title, date, cover, excerpt, slug }) => {
     return (
         <div className={styles.section}>
             <div className={styles.head}>
                 <div className={styles.content}>
                     <div className={styles.title}>
                         <Title title={title} slug={slug} />
-                        <DateMeta value={date} />
+                        <Meta date={date} />
+                        <hr />
                     </div>
                     <p className={styles.excerpt}>{excerpt.substring(0, 620) + "..."}</p>
                     <div className={styles.button}>
@@ -31,4 +32,4 @@ const Hero = ({ title, date, cover, excerpt, slug }) => {
     );
 };
 
-export default Hero;
+export default MorePosts;

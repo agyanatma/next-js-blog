@@ -8,7 +8,11 @@ const Header = () => {
         <header>
             <div className={styles.wrapper}>
                 <div className={styles.content}>
-                    <h3 className={styles.logo}>Type Blog</h3>
+                    <Link href="/">
+                        <a>
+                            <h3 className={styles.logo}>Type Blog</h3>
+                        </a>
+                    </Link>
                     <nav className={styles.navigation}>
                         <ul>
                             <li>

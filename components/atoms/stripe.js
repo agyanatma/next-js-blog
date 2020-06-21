@@ -2,10 +2,10 @@ import React from "react";
 
 import styles from "../styles/stripe.module.scss";
 
-const Stripe = (props) => {
+const Stripe = ({ children, gap }) => {
     return (
-        <div className={styles.stripe}>
-            <p>{props.title}</p>
+        <div className={[styles.stripe, styles[gap == true ? "gap" : ""]].join(" ")}>
+            <p>{children}</p>
         </div>
     );
 };

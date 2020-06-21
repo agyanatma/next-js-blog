@@ -47,6 +47,11 @@ $black: #1e1e1e;
     a:hover {
         text-decoration: underline;
     }
+
+    hr {
+        width: 50%;
+        float: left;
+    }
 }
 
 .excerpt {
@@ -75,5 +80,11 @@ $black: #1e1e1e;
         margin-top: 0;
         padding: 0;
         margin-bottom: 3.6px;
+    }
+
+    .title {
+        hr {
+            width: 80%;
+        }
     }
 }

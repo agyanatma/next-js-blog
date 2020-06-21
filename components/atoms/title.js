@@ -4,8 +4,8 @@ import Link from "next/link";
 const Title = ({ title, slug }) => {
     return (
         <h1>
-            <Link as={`/posts/${slug}`} href="/posts/[slug]">
-                <a>{title.length > 50 ? title.substring(0, 50) + "..." : title}</a>
+            <Link as={`/blog/${slug}`} href="/blog/[slug]">
+                <a>{title}</a>
             </Link>
         </h1>
     );
